@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/University/AKP/AKP/AKP/AKP.runs/synth_1'
+HD_PWD='C:/University/AKP/AKP/AKP_small/AKP/AKP.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log PELENG_DELAY.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PELENG_DELAY.tcl
+EAStep vivado -log AKP_small.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source AKP_small.tcl

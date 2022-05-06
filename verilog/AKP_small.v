@@ -96,6 +96,8 @@ reg		[31:0] 	PEL_OUT_RE_delay_f,PEL_OUT_IM_delay_f;
 reg				ksi_en_ff;
 reg				eop_strob_f, eop_strob_ff;
 
+reg             eop_reg;
+
 wire	[191:0] GDFX_TEMP_SIGNAL_0;
 wire	[15:0] GDFX_TEMP_SIGNAL_1;
 
@@ -190,7 +192,7 @@ if (!sbros_n)
 	end
 else
 	begin
-	work <= ~work & ink | work & 1b'1;
+	work <= ~work & ink | work & 1'b 1;
 	end
 end
 

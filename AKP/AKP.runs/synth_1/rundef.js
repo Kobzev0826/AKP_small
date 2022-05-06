@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log PELENG_DELAY.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PELENG_DELAY.tcl" );
+         "-log AKP_small.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source AKP_small.tcl" );
 
 
 
